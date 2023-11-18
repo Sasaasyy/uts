@@ -1,11 +1,6 @@
-let menu = document.querySelector("#menu-icon");
-let navbar = document.querySelector("#.navbar");
+const menu = document.querySelector(".navbar #menu");
+const nav = document.querySelector(".navbar .navbar-nav");
 
-menu.onclick = () => {
-  menu.classList.toogle("bx-x");
-  navbar.classList.toggle("active");
-};
-window.onscroll = () => {
-  menu.classList.remove("bx-x");
-  navbar.classList.remove("active");
-};
+menu.addEventListener("click", function () {
+  nav.classList.toggle("active");
+});
